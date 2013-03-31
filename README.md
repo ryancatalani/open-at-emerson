@@ -1,6 +1,6 @@
 # About
 
-A simple way to see what's open, right now, at Emerson College. See a human-readable version of the schedules by looking at *hours.yaml*. Let me know (ryan@ryancatalani.com) if you see any inaccuracies. Viewable at [openatemerson.ryancatalani.com](http://openatemerson.ryancatalani.com).
+A simple way to see what's open, right now, at Emerson College. See a human-readable version of the schedules by looking at `hours.yaml`. Let me know (ryan@ryancatalani.com) if you see any inaccuracies. Viewable at [openatemerson.ryancatalani.com](http://openatemerson.ryancatalani.com).
 
 # License: MIT
 
