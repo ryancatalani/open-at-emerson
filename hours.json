@@ -1,0 +1,426 @@
+{
+  "location_categories": {
+    "studying": [
+      {
+        "multiple_hour_periods": [
+          {
+            "period_dates": [
+              [
+                "2013-01-16",
+                "2013-04-13"
+              ],
+              [
+                "2013-05-01",
+                "2013-05-01"
+              ]
+            ],
+            "weekday_hours": [
+              "07:45",
+              "23:00"
+            ],
+            "friday_hours": [
+              "07:45",
+              "21:00"
+            ],
+            "saturday_hours": [
+              "10:00",
+              "18:00"
+            ],
+            "sunday_hours": [
+              "12:00",
+              "23:00"
+            ],
+            "period": "Regular Hours"
+          },
+          {
+            "period_dates": [
+              "2013-04-14",
+              "2013-04-30"
+            ],
+            "weekday_hours": [
+              [
+                "00:00",
+                "01:00"
+              ],
+              [
+                "07:45",
+                "24:00"
+              ]
+            ],
+            "friday_hours": [
+              "07:45",
+              "21:00"
+            ],
+            "saturday_hours": [
+              "10:00",
+              "20:00"
+            ],
+            "sunday_hours": [
+              [
+                "00:00",
+                "01:00"
+              ],
+              [
+                "12:00",
+                "24:00"
+              ]
+            ],
+            "period": "Extended Hours"
+          },
+          {
+            "period_dates": [
+              "2013-05-03",
+              "2013-05-19"
+            ],
+            "weekday_hours": [
+              "08:45",
+              "17:00"
+            ],
+            "period": "Office Hours",
+            "weekend_hours": []
+          },
+          {
+            "period_dates": [
+              "2013-05-20",
+              "2013-08-09"
+            ],
+            "weekday_hours": [
+              "08:30",
+              "22:00"
+            ],
+            "friday_hours": [
+              "03:80",
+              "17:00"
+            ],
+            "saturday_hours": [
+              "12:00",
+              "18:00"
+            ],
+            "sunday_hours": [],
+            "period": "Summer Session"
+          }
+        ],
+        "default_hour_period": "Regular Hours",
+        "name": "Library"
+      },
+      {
+        "multiple_hour_periods": [
+          {
+            "period_dates": [
+              "2013-01-16",
+              "2013-05-02"
+            ],
+            "weekday_hours": [
+              "07:45",
+              "24:00"
+            ],
+            "friday_hours": [
+              "07:45",
+              "21:00"
+            ],
+            "notes": "Tufte and WPL are closed on the weekends. See class usage <a href='http://www.emerson.edu/about-emerson/offices-departments/lab-operations/lab-profiles/lab-schedule'>here</a>.",
+            "saturday_hours": [
+              "10:00",
+              "18:00"
+            ],
+            "sunday_hours": [
+              "12:00",
+              "24:00"
+            ],
+            "period": "Regular Hours"
+          },
+          {
+            "period_dates": [],
+            "notes": "All labs except WPL available.",
+            "weekday_hours": [
+              "12:00",
+              "24:00"
+            ],
+            "period": "Holiday Hours",
+            "weekend_hours": [
+              "12:00",
+              "24:00"
+            ]
+          },
+          {
+            "period_dates": [
+              "2013-05-20",
+              "2013-08-09"
+            ],
+            "weekday_hours": [
+              "08:45",
+              "22:00"
+            ],
+            "friday_hours": [
+              "08:45",
+              "17:00"
+            ],
+            "notes": "All labs available.",
+            "saturday_hours": [
+              "12:00",
+              "18:00"
+            ],
+            "sunday_hours": [],
+            "period": "Summer Hours"
+          },
+          {
+            "period_dates": [],
+            "notes": "All labs except Tufte and WPL available.",
+            "weekday_hours": [
+              "08:45",
+              "17:00"
+            ],
+            "period": "Intercession Hours",
+            "weekend_hours": []
+          },
+          {
+            "period_dates": [
+              "2013-08-13",
+              "2013-09-04"
+            ],
+            "notes": "Only XML and 3DL are open.",
+            "weekday_hours": [
+              "08:45",
+              "17:00"
+            ],
+            "period": "Special Lab Availability",
+            "weekend_hours": []
+          }
+        ],
+        "default_hour_period": "Regular Hours",
+        "name": "Labs"
+      },
+      {
+        "weekday_hours": [
+          "09:00",
+          "24:00"
+        ],
+        "sunday_hours": [
+          "12:00",
+          "24:00"
+        ],
+        "name": "Quiet Study Lounge (Piano Row, 2nd floor)",
+        "saturday_hours": [
+          "09:00",
+          "24:00"
+        ]
+      }
+    ],
+    "eating": [
+      {
+        "weekday_hours": [
+          "07:00",
+          "21:00"
+        ],
+        "name": "Emerson's Cafe",
+        "weekend_hours": [
+          "07:00",
+          "19:00"
+        ]
+      },
+      {
+        "friday_hours": [
+          [
+            "07:00",
+            "15:45"
+          ],
+          [
+            "16:30",
+            "20:00"
+          ]
+        ],
+        "weekday_hours": [
+          [
+            "07:00",
+            "15:45"
+          ],
+          [
+            "16:30",
+            "20:45"
+          ]
+        ],
+        "name": "Dining Hall",
+        "weekend_hours": [
+          [
+            "11:00",
+            "15:45"
+          ],
+          [
+            "16:30",
+            "20:00"
+          ]
+        ]
+      },
+      {
+        "weekday_hours": [
+          [
+            "00:00",
+            "02:00"
+          ],
+          [
+            "11:00",
+            "24:00"
+          ]
+        ],
+        "name": "LB C-Store",
+        "weekend_hours": [
+          [
+            "00:00",
+            "02:00"
+          ],
+          [
+            "11:00",
+            "24:00"
+          ]
+        ]
+      },
+      {
+        "weekday_hours": [
+          "10:00",
+          "22:00"
+        ],
+        "name": "The Max, all stations except the Grill",
+        "weekend_hours": [
+          "11:00",
+          "22:00"
+        ]
+      },
+      {
+        "weekday_hours": [
+          "11:00",
+          "24:00"
+        ],
+        "name": "The Max Grill Station",
+        "weekend_hours": [
+          "11:00",
+          "24:00"
+        ]
+      },
+      {
+        "weekday_hours": [
+          [
+            "00:00",
+            "02:00"
+          ],
+          [
+            "10:00",
+            "24:00"
+          ]
+        ],
+        "name": "The Max C-Store",
+        "weekend_hours": [
+          [
+            "00:00",
+            "02:00"
+          ],
+          [
+            "10:00",
+            "24:00"
+          ]
+        ]
+      },
+      {
+        "friday_hours": [
+          "11:00",
+          "20:00"
+        ],
+        "weekday_hours": [
+          "11:00",
+          "23:00"
+        ],
+        "name": "Paramount Cafe",
+        "weekend_hours": [
+          "11:00",
+          "20:00"
+        ]
+      }
+    ],
+    "everything_else": [
+      {
+        "multiple_hour_periods": [
+          {
+            "period_dates": [
+              "2013-01-16",
+              "2013-05-02"
+            ],
+            "weekday_hours": [
+              "09:00",
+              "24:00"
+            ],
+            "sunday_hours": [
+              "12:00",
+              "24:00"
+            ],
+            "period": "Regular Hours",
+            "saturday_hours": [
+              "09:00",
+              "24:00"
+            ]
+          },
+          {
+            "period_dates": [
+              "2013-05-03",
+              "2013-09-03"
+            ],
+            "weekday_hours": [
+              "09:00",
+              "17:00"
+            ],
+            "period": "Vacation Hours",
+            "weekend_hours": []
+          }
+        ],
+        "default_hour_period": "Regular Hours",
+        "name": "Campus Center (Piano Row basement)"
+      },
+      {
+        "friday_hours": [
+          "07:00",
+          "19:00"
+        ],
+        "weekday_hours": [
+          "07:00",
+          "21:00"
+        ],
+        "sunday_hours": [
+          "12:00",
+          "19:00"
+        ],
+        "name": "Fitness Center",
+        "saturday_hours": [
+          "11:00",
+          "18:00"
+        ]
+      },
+      {
+        "notes": "Closes at 5 p.m. during breaks.",
+        "weekday_hours": [
+          "09:00",
+          "18:00"
+        ],
+        "name": "Mailroom",
+        "weekend_hours": []
+      },
+      {
+        "notes": "Open when weather permits.",
+        "weekday_hours": [
+          "09:00",
+          "24:00"
+        ],
+        "sunday_hours": [
+          "12:00",
+          "24:00"
+        ],
+        "name": "Piano Row Terrace",
+        "saturday_hours": [
+          "09:00",
+          "24:00"
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "time_format": "ISO_8601",
+    "compile_to_json": "http://yaml-online-parser.appspot.com/"
+  }
+}
