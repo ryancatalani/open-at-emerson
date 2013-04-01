@@ -22,7 +22,6 @@ $ ->
 				$("<div></div>").addClass('notes').html(status_results.notes).appendTo(loc_div) if status_results.notes?
 				loc_div.addClass('open') if open
 				loc_div.appendTo(cat_div)
-				# loc_div.appendTo(main)
 
 			cat_div.appendTo(main)
 
@@ -30,7 +29,7 @@ $ ->
 
 	isOpen = (location) ->
 
-		console.log location.name
+		# console.log location.name
 
 		day = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"][ new Date().getDay() ]
 		weekend = day in ["sunday", "saturday"]
@@ -39,10 +38,16 @@ $ ->
 		hours = []
 		sel = {}
 		open = false
+
+		another_hour_interval_today = false
+		next_sel = {}
+		next_open_time = ""
+
+
 		ret = {}
 
 		if location.multiple_hour_periods?
-			for period in location.multiple_hour_periods
+			for period, period_i in location.multiple_hour_periods
 				if typeof period.period_dates[0] == "string"
 					if current_date > Date.parse(period.period_dates[0]) and current_date < Date.parse(period.period_dates[1])
 						sel = period
@@ -54,6 +59,7 @@ $ ->
 							break
 		else
 			sel = location
+			next_sel = location
 
 		if sel["#{day}_hours"]?
 			hours = sel["#{day}_hours"]
@@ -65,11 +71,15 @@ $ ->
 		else if typeof hours[0] == "string"
 			open = (current_time > "#{hours[0]}:00") and (current_time < "#{hours[1]}:00") # Because current_time has seconds
 		else
-			for inner_hours in hours
+			for inner_hours, i in hours
 				if (current_time > "#{inner_hours[0]}:00") and (current_time < "#{inner_hours[1]}:00")
 					open = true
+					if i < hours.length - 1
+						another_hour_interval_today = true
+						next_open_time = hours[i+1][0]
 					break
 
+		# console.log next_open_time
 		ret.open = open
 		ret.notes = sel.notes if sel.notes?
 

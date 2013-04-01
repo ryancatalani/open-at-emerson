@@ -41,8 +41,7 @@
       return _results;
     });
     return isOpen = function(location) {
-      var current_date, current_time, day, hours, inner_hours, inner_period, open, period, ret, sel, weekend, _i, _j, _k, _len, _len1, _len2, _ref, _ref1;
-      console.log(location.name);
+      var another_hour_interval_today, current_date, current_time, day, hours, i, inner_hours, inner_period, next_open_time, next_sel, open, period, period_i, ret, sel, weekend, _i, _j, _k, _len, _len1, _len2, _ref, _ref1;
       day = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"][new Date().getDay()];
       weekend = day === "sunday" || day === "saturday";
       current_date = Date.now();
@@ -50,11 +49,14 @@
       hours = [];
       sel = {};
       open = false;
+      another_hour_interval_today = false;
+      next_sel = {};
+      next_open_time = "";
       ret = {};
       if (location.multiple_hour_periods != null) {
         _ref = location.multiple_hour_periods;
-        for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-          period = _ref[_i];
+        for (period_i = _i = 0, _len = _ref.length; _i < _len; period_i = ++_i) {
+          period = _ref[period_i];
           if (typeof period.period_dates[0] === "string") {
             if (current_date > Date.parse(period.period_dates[0]) && current_date < Date.parse(period.period_dates[1])) {
               sel = period;
@@ -73,6 +75,7 @@
         }
       } else {
         sel = location;
+        next_sel = location;
       }
       if (sel["" + day + "_hours"] != null) {
         hours = sel["" + day + "_hours"];
@@ -84,10 +87,14 @@
       } else if (typeof hours[0] === "string") {
         open = (current_time > ("" + hours[0] + ":00")) && (current_time < ("" + hours[1] + ":00"));
       } else {
-        for (_k = 0, _len2 = hours.length; _k < _len2; _k++) {
-          inner_hours = hours[_k];
+        for (i = _k = 0, _len2 = hours.length; _k < _len2; i = ++_k) {
+          inner_hours = hours[i];
           if ((current_time > ("" + inner_hours[0] + ":00")) && (current_time < ("" + inner_hours[1] + ":00"))) {
             open = true;
+            if (i < hours.length - 1) {
+              another_hour_interval_today = true;
+              next_open_time = hours[i + 1][0];
+            }
             break;
           }
         }

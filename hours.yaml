@@ -13,7 +13,7 @@ location_categories:
     - name: Dining Hall
       weekday_hours: [["07:00", "15:45"], ["16:30", "20:45"]]
       friday_hours: [["07:00", "15:45"], ["16:30", "20:00"]]
-      weekend_hours: [["11:00", "15:45"], ["16:30", "20:00"]]
+      weekend_hours: [["10:30", "15:45"], ["16:30", "20:00"]]
 
     - name: LB C-Store
       weekday_hours: [["00:00", "02:00"], ["11:00","24:00"]] # Otherwise known as 11 am - 2am
