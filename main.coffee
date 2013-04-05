@@ -61,6 +61,12 @@ $ ->
 			sel = location
 			next_sel = location
 
+		if jQuery.isEmptyObject(sel)
+			# No hours in this period, so assume it's closed
+			ret.open = false
+			ret.notes = ''
+			return ret
+
 		if sel["#{day}_hours"]?
 			hours = sel["#{day}_hours"]
 		else

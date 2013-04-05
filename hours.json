@@ -416,6 +416,51 @@
           "09:00",
           "24:00"
         ]
+      },
+      {
+        "multiple_hour_periods": [
+          {
+            "period_dates": [
+              "2013-04-06",
+              "2013-04-06"
+            ],
+            "weekday_hours": [],
+            "sunday_hours": [],
+            "period": "April First Saturday",
+            "saturday_hours": [
+              "18:00",
+              "21:00"
+            ]
+          },
+          {
+            "period_dates": [
+              "2013-04-07",
+              "2013-04-28"
+            ],
+            "weekday_hours": [],
+            "sunday_hours": [
+              "15:00",
+              "18:00"
+            ],
+            "period": "April Sunday Hours",
+            "saturday_hours": []
+          },
+          {
+            "period_dates": [
+              "2013-04-21",
+              "2013-04-28"
+            ],
+            "weekday_hours": [],
+            "sunday_hours": [],
+            "period": "April Satuday Hours",
+            "saturday_hours": [
+              "15:00",
+              "18:00"
+            ]
+          }
+        ],
+        "default_hour_period": "April Sunday Hours",
+        "name": "Bobbi Brown and Steven Plofker Gym"
       }
     ]
   },

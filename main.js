@@ -77,6 +77,11 @@
         sel = location;
         next_sel = location;
       }
+      if (jQuery.isEmptyObject(sel)) {
+        ret.open = false;
+        ret.notes = '';
+        return ret;
+      }
       if (sel["" + day + "_hours"] != null) {
         hours = sel["" + day + "_hours"];
       } else {

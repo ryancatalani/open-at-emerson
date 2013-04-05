@@ -131,3 +131,24 @@ location_categories:
       saturday_hours: ["09:00", "24:00"]
       sunday_hours: ["12:00", "24:00"]
       notes: Open when weather permits.
+
+    - name: Bobbi Brown and Steven Plofker Gym
+      default_hour_period: April Sunday Hours
+      multiple_hour_periods:
+      - period: April First Saturday
+        period_dates: ["2013-04-06","2013-04-06"]
+        weekday_hours: []
+        saturday_hours: ["18:00","21:00"]
+        sunday_hours: []
+      - period: April Sunday Hours
+        period_dates: ["2013-04-07","2013-04-28"]
+        weekday_hours: []
+        saturday_hours: []
+        sunday_hours: ["15:00","18:00"]
+      - period: April Satuday Hours
+        period_dates: ["2013-04-21","2013-04-28"]
+        weekday_hours: []
+        saturday_hours: ["15:00","18:00"]
+        sunday_hours: []
+
+
