@@ -5,6 +5,12 @@ metadata:
 
 location_categories:
 
+  tapping:
+    - name: Must tap in
+      weekday_hours: [["00:00","07:45"], ["18:00","24:00"]]
+      weekend_hours: ["00:00","24:00"]
+      notes: Dorms and the Paramount Center always require tapping in.
+
   eating:
     - name: Emerson's Cafe
       weekday_hours: ["07:00", "21:00"]

@@ -14,10 +14,12 @@ $ ->
 				loc_div.addClass('location')
 				status_results = isOpen(location)
 				open = status_results.open
+				openClosedText = ['Open','Closed']
+				openClosedText = ['Yes','No'] if type == 'tapping'
 				if open
-					$("<div></div>").addClass('status').text('Open').appendTo(loc_div)
+					$("<div></div>").addClass('status').text(openClosedText[0]).appendTo(loc_div)
 				else
-					$("<div></div>").addClass('status').text('Closed').appendTo(loc_div)
+					$("<div></div>").addClass('status').text(openClosedText[1]).appendTo(loc_div)
 				$("<h4>#{location.name}</h4>").appendTo(loc_div)
 				$("<div></div>").addClass('notes').html(status_results.notes).appendTo(loc_div) if status_results.notes?
 				loc_div.addClass('open') if open

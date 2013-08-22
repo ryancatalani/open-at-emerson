@@ -1,5 +1,25 @@
 {
   "location_categories": {
+    "tapping": [
+      {
+        "notes": "Dorms and the Paramount Center always require tapping in.",
+        "weekday_hours": [
+          [
+            "00:00",
+            "07:45"
+          ],
+          [
+            "18:00",
+            "24:00"
+          ]
+        ],
+        "name": "Must tap in",
+        "weekend_hours": [
+          "00:00",
+          "24:00"
+        ]
+      }
+    ],
     "studying": [
       {
         "multiple_hour_periods": [

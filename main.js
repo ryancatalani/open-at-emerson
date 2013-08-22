@@ -4,7 +4,7 @@
   $(function() {
     var isOpen;
     $.getJSON("hours.json", function(json) {
-      var arr, cat_div, loc_div, location, main, open, status_results, type, type_title, _i, _len, _ref, _results;
+      var arr, cat_div, loc_div, location, main, open, openClosedText, status_results, type, type_title, _i, _len, _ref, _results;
       main = $("#main");
       _ref = json.location_categories;
       _results = [];
@@ -22,10 +22,14 @@
           loc_div.addClass('location');
           status_results = isOpen(location);
           open = status_results.open;
+          openClosedText = ['Open', 'Closed'];
+          if (type === 'tapping') {
+            openClosedText = ['Yes', 'No'];
+          }
           if (open) {
-            $("<div></div>").addClass('status').text('Open').appendTo(loc_div);
+            $("<div></div>").addClass('status').text(openClosedText[0]).appendTo(loc_div);
           } else {
-            $("<div></div>").addClass('status').text('Closed').appendTo(loc_div);
+            $("<div></div>").addClass('status').text(openClosedText[1]).appendTo(loc_div);
           }
           $("<h4>" + location.name + "</h4>").appendTo(loc_div);
           if (status_results.notes != null) {
