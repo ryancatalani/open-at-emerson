@@ -13,33 +13,25 @@ location_categories:
 
   eating:
     - name: Emerson's Cafe
-      weekday_hours: ["07:00", "21:00"]
+      weekday_hours: ["07:00", "22:00"]
+      friday_hours: ["7:00","21:00"]
       weekend_hours: ["07:00", "19:00"]
 
     - name: Dining Hall
-      weekday_hours: [["07:00", "15:45"], ["16:30", "20:45"]]
-      friday_hours: [["07:00", "15:45"], ["16:30", "20:00"]]
-      weekend_hours: [["10:30", "15:45"], ["16:30", "20:00"]]
+      weekday_hours: ["07:00","21:00"]
+      weekend_hours: ["10:30","20:00"]
 
     - name: LB C-Store
       weekday_hours: [["00:00", "02:00"], ["11:00","24:00"]] # Otherwise known as 11 am - 2am
-      weekend_hours: [["00:00", "02:00"], ["11:00","24:00"]]
+      weekend_hours: [["00:00", "02:00"], ["12:00","24:00"]] # Noon - 2am
 
-    - name: The Max, all stations except the Grill
-      weekday_hours: ["10:00", "22:00"]
-      weekend_hours: ["11:00", "22:00"]
-
-    - name: The Max Grill Station
-      weekday_hours: ["11:00", "24:00"]
-      weekend_hours: ["11:00", "24:00"]
-
-    - name: The Max C-Store
-      weekday_hours: [["00:00", "02:00"], ["10:00","24:00"]] # Otherwise known as 10 am - 2am
-      weekend_hours: [["00:00", "02:00"], ["10:00","24:00"]]
+    - name: The Max
+      weekday_hours: [["00:00", "02:00"], ["8:00","24:00"]] # 8am - 2am
+      weekend_hours: [["00:00", "02:00"], ["10:00","24:00"]] # 10am - 2am
 
     - name: Paramount Cafe
-      weekday_hours: ["11:00", "23:00"]
-      friday_hours: ["11:00", "20:00"]
+      weekday_hours: ["8:00", "23:00"]
+      friday_hours: ["8:00", "20:00"]
       weekend_hours: ["11:00", "20:00"]
 
   studying:
@@ -47,19 +39,19 @@ location_categories:
       default_hour_period: Regular Hours
       multiple_hour_periods:
       - period: Regular Hours
-        period_dates: [["2013-01-16", "2013-04-13"], ["2013-05-01", "2013-05-01"]]
+        period_dates: ["2013-09-04", "2013-11-30"]
         weekday_hours: ["07:45", "23:00"]
         friday_hours: ["07:45", "21:00"]
         saturday_hours: ["10:00", "18:00"]
         sunday_hours: ["12:00", "23:00"]
       - period: Extended Hours
-        period_dates: ["2013-04-14", "2013-04-30"]
+        period_dates: ["2013-12-01", "2013-12-16"]
         weekday_hours: [["00:00", "01:00"], ["07:45", "24:00"]] # Otherwise known as 7:45am-1am
         friday_hours: ["07:45", "21:00"]
         saturday_hours: ["10:00", "20:00"]
         sunday_hours: [["00:00", "01:00"], ["12:00", "24:00"]] # Otherwise known as noon-1am
       - period: Office Hours
-        period_dates: ["2013-05-03", "2013-05-19"]
+        period_dates: ["2013-08-25", "2013-09-03"]
         weekday_hours: ["08:45", "17:00"]
         weekend_hours: []
       - period: Summer Session
@@ -73,7 +65,7 @@ location_categories:
       default_hour_period: Regular Hours
       multiple_hour_periods:
       - period: Regular Hours
-        period_dates: ["2013-01-16", "2013-05-02"]
+        period_dates: ["2013-09-04", "2013-12-15"]
         weekday_hours: ["07:45", "24:00"]
         friday_hours: ["07:45", "21:00"]
         saturday_hours: ["10:00", "18:00"]
