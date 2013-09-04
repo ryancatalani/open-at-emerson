@@ -104,7 +104,7 @@ location_categories:
       default_hour_period: Regular Hours
       multiple_hour_periods:
       - period: Regular Hours
-        period_dates: ["2013-01-16", "2013-05-02"]
+        period_dates: ["2013-09-04", "2013-12-17"]
         weekday_hours: ["09:00", "24:00"]
         saturday_hours: ["09:00", "24:00"]
         sunday_hours: ["12:00", "24:00"]
